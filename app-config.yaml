@@ -35,10 +35,10 @@ backend:
     connection: ':memory:'
   cache:
     store: memory
-  cors:
-    origin: http://${HOSTNAME}:3000
-    methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
-    credentials: true
+  #cors:
+  #  origin: http://${HOSTNAME}:3000
+  #  methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
+  #  credentials: true
   csp:
     connect-src: ["'self'", 'http:', 'https:']
     # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
