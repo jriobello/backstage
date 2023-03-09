@@ -36,7 +36,7 @@ backend:
   cache:
     store: memory
   cors:
-    origin: [all]
+    origin: ['http://mi-backstage-cac-canary.apps.ocp02nop.batera.euskadi.eus:3000']
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
     credentials: true
   csp:
