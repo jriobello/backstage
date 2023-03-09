@@ -1,6 +1,8 @@
 app:
   title: Backstage Example App
-  baseUrl: http://${HOSTNAME}:3000
+  #baseUrl: http://${HOSTNAME}:3000
+  baseUrl: https://mi-backstage-cac-canary.apps.ocp02nop.batera.euskadi.eus
+  listen: ${HOSTNAME}:300
   #datadogRum:
   #  clientToken: '123456789'
   #  applicationId: qwerty
@@ -27,9 +29,10 @@ backend:
   # auth:
   #   keys:
   #     - secret: ${BACKEND_SECRET}
-  baseUrl: http://${HOSTNAME}:7007
-  listen:
-    port: 7007
+  #baseUrl: http://${HOSTNAME}:7007
+  baseUrl: https://mi-backstage-cac-canary.apps.ocp02nop.batera.euskadi.eus
+  listen: ${HOSTNAME}:7007
+    #port: 7007
   database:
     client: better-sqlite3
     connection: ':memory:'
