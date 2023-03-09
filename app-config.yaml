@@ -1,8 +1,6 @@
 app:
   title: Backstage Example App
-  #baseUrl: http://${HOSTNAME}:3000
-  baseUrl: https://mi-backstage-cac-canary.apps.ocp02nop.batera.euskadi.eus
-  listen: ${HOSTNAME}:300
+  baseUrl: http://${HOSTNAME}:3000
   #datadogRum:
   #  clientToken: '123456789'
   #  applicationId: qwerty
