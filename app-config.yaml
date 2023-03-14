@@ -37,7 +37,7 @@ backend:
   cache:
     store: memory
   cors:
-    origin: ['http://mi-backstage-cac-canary.apps.ocp02nop.batera.euskadi.eus']
+    origin: ['http://${HOSTNAME}:3000']
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
     credentials: true
   csp:
@@ -49,6 +49,7 @@ backend:
       - host: example.com
       - host: '*.mozilla.org'
       - host: '*.apps.ocp02nop.batera.euskadi.eus'
+      - host: '${HOSTNAME}
   # workingDirectory: /tmp # Use this to configure a working directory for the scaffolder, defaults to the OS temp-dir
 
 # See README.md in the proxy-backend plugin for information on the configuration format
